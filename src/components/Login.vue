@@ -29,7 +29,14 @@
           </table>
         </div>
       </el-main>
-      <el-footer class="el-footer">Footer</el-footer>
+      <el-footer class="el-footer">
+        <div id="div2-1">
+          <span>热门活动：<span style="width: 100%;height: 50%" @click="hd1">吾儿泰🐕招亲 <span style="color: red">点击参加</span></span></span>
+        </div>
+        <div id="div2-2">
+          <span>Copyright © 2022 泰🐕他爹才涛 版权所有 </span><a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">备案号</a>
+        </div>
+      </el-footer>
     </el-container>
   </div>
 </template>
@@ -42,6 +49,11 @@ export default {
       userName: '',
       password: '',
       image_url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg'
+    }
+  },
+  methods: {
+    hd1() {
+      alert("联系QQ:2529788639")
     }
   }
 }
@@ -74,6 +86,20 @@ export default {
 
 .el-footer {
   background-color: #2c3e50;
+}
+
+#div2-1 {
+  height: 50%;
+  width: 100%;
+  align-content: center;
+  font-size: 10px;
+}
+
+#div2-2 {
+  height: 50%;
+  width: 100%;
+  align-content: center;
+  font-size: 10px;
 }
 
 </style>
